@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/excel_export', 'ExportExcelController@index');
 Route::get('/export_excel/excel', 'ExportExcelController@excel')->name('export_excel.excel');
+Route::get('/export_excel' , 'ExportExcelController@sort') -> name('export_excel');
